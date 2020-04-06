@@ -6,11 +6,11 @@
   <!-- end::featureManager[] -->
 
   <!-- tag::httpEndpoint[] -->
-  <httpEndpoint httpPort="${default.http.port}" httpsPort="${default.https.port}"
+  <httpEndpoint httpPort="9080" httpsPort="9443"
                 id="defaultHttpEndpoint" host="*" />
   <!-- end::httpEndpoint[] -->
   
   <!-- tag::webApplication[] -->
-  <webApplication location="guide-rest-intro.war" contextRoot="${app.context.root}"/>
+  <webApplication location="guide-rest-intro.war" contextRoot="/LibertyProject"/>
   <!-- end::webApplication[] -->
 </server>
